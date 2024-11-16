@@ -1,28 +1,31 @@
 ---
+import Footer from '@/components/Footer';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 import Schedule from '../components/Schedule';
 
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body class="dark:bg-slate-900">
-    <Header title={SITE_TITLE} />
+  <body class="bg-grid-pattern text-white">
+    <Header client:visible />
     <main
       class="mt-12 prose dark:prose-invert prose-neutral sm:prose-sm lg:prose-lg xl:prose-xl 2xl:prose-2xl mx-auto"
     >
-    <h1 class="text-4xl font-bold text-center mt-8 mb-8">Semana Acadêmica da Ciência da Computação</h1>
-
-    <!-- Cronograma -->
-    <section>
-      <Schedule />
-    </section>
+      <h1 class="text-4xl font-bold text-center mt-8 mb-8 text-primary
+      pt-12">
+        Semana Acadêmica <br />
+        Ciência da Computação
+      </h1>
+      <!-- Cronograma -->
+      <section>
+        <Schedule />
+      </section>
     </main>
     <Footer />
   </body>

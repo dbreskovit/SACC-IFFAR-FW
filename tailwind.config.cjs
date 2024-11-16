@@ -2,74 +2,56 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ['class'],
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
       height: {
         'screen/2': '50vh',
       },
-      fontFamily: {
-        sans: ['Lexend', ...defaultTheme.fontFamily.sans],
-        mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
-      },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            '--tw-prose-emphasis': theme('colors.rose[600]'),
-            pre: {
-              color: null,
-              backgroundColor: null,
-            },
-            h1: {
-              fontWeight: '300',
-              color: 'var(--tw-prose-emphasis)',
-            },
-            h2: {
-              fontWeight: '350',
-              color: 'var(--tw-prose-emphasis)',
-            },
-            h3: {
-              fontWeight: '400',
-              color: 'var(--tw-prose-emphasis)',
-            },
-            h4: {
-              fontWeight: '600',
-              color: 'var(--tw-prose-emphasis)',
-            },
-            h5: {
-              color: 'var(--tw-prose-emphasis)',
-            },
-            h6: {
-              fontStyle: 'italic',
-              color: 'var(--tw-prose-emphasis)',
-            },
-            a: {
-              textDecoration: 'none',
-              borderColor: 'var(--tw-prose-emphasis)',
-              borderBottomWidth: '2px',
-            },
-            'a:hover': {
-              color: 'var(--tw-prose-emphasis)',
-            },
-            blockquote: {
-              borderLeftColor: 'var(--tw-prose-emphasis)',
-            },
-            'blockquote > p::before': {
-              color: 'var(--tw-prose-emphasis)',
-            },
-            'blockquote > p::after': {
-              color: 'var(--tw-prose-emphasis)',
-            },
-            'ol > li::marker': {
-              color: 'var(--tw-prose-emphasis)',
-            },
-            'ul > li::marker': {
-              color: 'var(--tw-prose-emphasis)',
-            },
-          },
+      colors: {
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        card: {
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
         },
-      }),
+        popover: {
+          DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))',
+        },
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
+        },
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
+        },
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
+        accent: {
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
+        },
+        destructive: {
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))',
+        },
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
+        chart: {
+          1: 'hsl(var(--chart-1))',
+          2: 'hsl(var(--chart-2))',
+          3: 'hsl(var(--chart-3))',
+          4: 'hsl(var(--chart-4))',
+          5: 'hsl(var(--chart-5))',
+        },
+      },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require('tailwindcss-animate')],
 };

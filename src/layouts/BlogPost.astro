@@ -2,8 +2,6 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Tag from '../components/Tag';
-import PostDates from '../components/PostDates';
 
 export interface Props {
   content: {
@@ -34,11 +32,11 @@ const {
 } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <BaseHead title={title} description={description} />
   </head>
-  <body class="dark:bg-slate-900">
+  <body class="bg-background">
     <Header />
     <main>
       <article>
@@ -53,28 +51,10 @@ const {
         <div
           class="mt-12 prose prose-sm sm:prose-base md:prose-lg lg:prose-xl xl:prose-2xl dark:prose-invert prose-slate mx-auto p-4"
         >
-          <h1>{title}</h1>
-          <div class="flex flex-col space-y-4 text-sm sm:text-base md:text-md lg:text-lg">
-            <div class="flex flex-row space-x-2">
-              {
-                tags?.map((tag) => (
-                  <Tag key={tag} href={`/tags/${tag}`}>
-                    {tag}
-                  </Tag>
-                ))
-              }
-            </div>
-            <div class="flex flex-row space-x-4">
-              <PostDates
-                initialDraftAt={initialDraftAt}
-                publishedAt={publishedAt}
-                updatedAt={updatedAt}
-              />
-              <div>☕{minutesRead}</div>
-            </div>
+          <h1 class="text-white">{title}</h1>
+          <div class="text-neutral-400 font-light">
+            <slot/>
           </div>
-          <div class="h-16"></div>
-          <slot />
         </div>
       </article>
     </main>
