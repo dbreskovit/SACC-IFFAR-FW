@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        'screen/2': '50vh',
+        'screen/2': '70vh',
       },
       colors: {
         background: 'hsl(var(--background))',

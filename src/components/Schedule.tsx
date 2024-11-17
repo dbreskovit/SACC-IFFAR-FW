@@ -1,6 +1,6 @@
 // // src/components/Schedule.tsx
 import React from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 type Event = {
   date: string;
@@ -9,7 +9,10 @@ type Event = {
 
 const events: Event[] = [
   { date: '13/01/2025', description: 'Abertura do Evento / Palestra sobre Acessibilidade na Web' },
-  { date: '14/01/2025', description: 'Palestra - Trabalho para Profissional em T.I. no meio acadêmico' },
+  {
+    date: '14/01/2025',
+    description: 'Palestra - Trabalho para Profissional em T.I. no meio acadêmico',
+  },
   { date: '15/01/2025', description: 'Roda de conversa - Mulheres dentro de T.I.' },
   { date: '16/01/2025', description: 'Oficinas de programação' },
   { date: '17/01/2025', description: 'Início da Hackathon' },
@@ -19,7 +22,7 @@ const events: Event[] = [
 const Schedule: React.FC = () => {
   return (
     <div className="max-w-3xl mx-auto">
-      <h2 className="text-3xl text-neutral-700 font-bold text-center ">Cronograma</h2>
+      <h2 className="text-3xl text-white font-bold text-center ">Cronograma</h2>
       <div className="space-y-6">
         {events.map((event, index) => (
           <Card key={index} className="glass p-2">
