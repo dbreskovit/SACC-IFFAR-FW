@@ -33,7 +33,7 @@ function Header() {
                 space-y-4 lg:space-y-0 lg:space-x-4 w-full lg:w-1/2 font-semibold text-base md:text-md text-slate-100 justify-end mt-4 lg:mt-0`} // Adicionei mt-4 para aumentar a distância no mobile
           >
             <HeaderLink href="/sobre">Sobre o Evento</HeaderLink>
-            <HeaderLink href="/sobre">Programação</HeaderLink>
+            {/* <HeaderLink href="/sobre">Programação</HeaderLink> */}
             <HeaderLink href="/patrocinio">Patrocine-nos 💜</HeaderLink>
           </nav>
         </div>
