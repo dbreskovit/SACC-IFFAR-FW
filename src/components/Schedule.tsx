@@ -1,22 +1,21 @@
-// // src/components/Schedule.tsx
+// src/components/Schedule.tsx
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 type Event = {
   date: string;
-  description: string;
+  description: string | string[];
 };
 
 const events: Event[] = [
   { date: '13/01/2025', description: 'Abertura do Evento / Palestra sobre Acessibilidade na Web' },
   {
     date: '14/01/2025',
-    description: 'Palestra - Trabalho para Profissional em T.I. no meio acadêmico',
+    description: ['Palestra - Trabalho para Profissional em T.I.', 'Palestra - Carreira acadêmica em T.I.'],
   },
   { date: '15/01/2025', description: 'Roda de conversa - Mulheres dentro de T.I.' },
   { date: '16/01/2025', description: 'Oficinas de programação' },
-  { date: '17/01/2025', description: 'Início da Hackathon' },
-  { date: '18/01/2025', description: 'Término da Hackathon / Cerimônia de encerramento' },
+  { date: '17/01/2025', description: 'Hackathon' },
 ];
 
 const Schedule: React.FC = () => {
@@ -30,7 +29,15 @@ const Schedule: React.FC = () => {
               <CardTitle className="text-xl font-semibold text-foreground">{event.date}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-lg text-muted-foreground">{event.description}</p>
+              {Array.isArray(event.description) ? (
+                event.description.map((desc, i) => (
+                  <p key={i} className="text-lg text-muted-foreground">
+                    {desc}
+                  </p>
+                ))
+              ) : (
+                <p className="text-lg text-muted-foreground">{event.description}</p>
+              )}
             </CardContent>
           </Card>
         ))}
