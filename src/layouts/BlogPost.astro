@@ -7,28 +7,12 @@ export interface Props {
   content: {
     title: string;
     description: string;
-    initialDraftAt?: string;
-    publishedAt?: string;
-    updatedAt?: string;
     heroImage?: string;
-    tags?: string[];
-    readingTime: {
-      text: string;
-    };
   };
 }
 
 const {
-  content: {
-    title,
-    description,
-    initialDraftAt,
-    publishedAt,
-    updatedAt,
-    heroImage,
-    tags,
-    readingTime: { text: minutesRead },
-  },
+  content: { title, description, heroImage },
 } = Astro.props;
 ---
 
@@ -36,6 +20,7 @@ const {
   <head>
     <BaseHead title={title} description={description} />
   </head>
+
   <body class="bg-background">
     <Header client:visible />
     <main>

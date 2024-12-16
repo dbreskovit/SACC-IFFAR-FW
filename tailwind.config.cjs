@@ -33,20 +33,15 @@ module.exports = {
           DEFAULT: 'hsl(var(--accent))',
           foreground: 'hsl(var(--accent-foreground))',
         },
-        destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))',
+        link: {
+          DEFAULT: 'hsl(var(--link))',
+          foreground: 'hsl(var(--link-foreground))',
         },
+ 
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        chart: {
-          1: 'hsl(var(--chart-1))',
-          2: 'hsl(var(--chart-2))',
-          3: 'hsl(var(--chart-3))',
-          4: 'hsl(var(--chart-4))',
-          5: 'hsl(var(--chart-5))',
-        },
+ 
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -62,32 +57,43 @@ module.exports = {
             h1: { color: theme('colors.foreground') },
             h2: { color: theme('colors.foreground') },
             h3: { color: theme('colors.foreground') },
+            h4: { color: theme('colors.foreground') },
+            hr: { borderColor: theme('colors.border') },
             strong: { color: theme('colors.foreground') },
             blockquote: {
               color: theme('colors.muted.foreground'),
               borderLeftColor: theme('colors.muted.DEFAULT'),
             },
-          },
-        },
-        dark: {
-          css: {
-            color: theme('colors.card.foreground'),
             a: {
-              color: theme('colors.primary.foreground'),
+              color: theme('colors.link.DEFAULT'),
+              textDecoration: 'none',
               '&:hover': {
-                color: theme('colors.accent.foreground'),
-              },
-            },
-            h1: { color: theme('colors.card.foreground') },
-            h2: { color: theme('colors.card.foreground') },
-            h3: { color: theme('colors.card.foreground') },
-            strong: { color: theme('colors.card.foreground') },
-            blockquote: {
-              color: theme('colors.foreground'),
-              borderLeftColor: theme('colors.accent.DEFAULT'),
+                color: theme('colors.link.foreground'),
+              }, 
             },
           },
         },
+        // dark: {
+        //   css: {
+        //     color: theme('colors.card.foreground'),
+        //     a: {
+        //       color: theme('colors.primary.foreground'),
+        //       '&:hover': {
+        //         color: theme('colors.accent.foreground'),
+        //       },
+        //     },
+        //     h1: { color: theme('colors.card.foreground') },
+        //     h2: { color: theme('colors.card.foreground') },
+        //     h3: { color: theme('colors.card.foreground') },
+        //     h4: { color: theme('colors.card.foreground') },
+        //     hr: { borderColor: theme('colors.border') },
+        //     strong: { color: theme('colors.card.foreground') },
+        //     blockquote: {
+        //       color: theme('colors.foreground'),
+        //       borderLeftColor: theme('colors.accent.DEFAULT'),
+        //     },
+        //   },
+        // },
       }),
     },
   },

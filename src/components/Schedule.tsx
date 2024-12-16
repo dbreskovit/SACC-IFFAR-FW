@@ -22,7 +22,7 @@ const events: Event[] = [
 const Schedule: React.FC = () => {
   return (
     <div className="max-w-3xl mx-auto">
-      <h2 className="text-3xl text-white font-bold text-center ">Cronograma</h2>
+      <h2 className="text-3xl text-white font-bold text-center ">Cronograma:</h2>
       <div className="space-y-6">
         {events.map((event, index) => (
           <Card key={index} className="glass p-2">
