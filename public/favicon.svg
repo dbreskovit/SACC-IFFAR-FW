@@ -1,13 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M22.25 4h-8.5a1 1 0 0 0-.96.73l-5.54 19.4a.5.5 0 0 0 .62.62l5.05-1.44a2 2 0 0 0 1.38-1.4l3.22-11.66a.5.5 0 0 1 .96 0l3.22 11.67a2 2 0 0 0 1.38 1.39l5.05 1.44a.5.5 0 0 0 .62-.62l-5.54-19.4a1 1 0 0 0-.96-.73Z"/>
-  <path fill="url(#gradient)" d="M18 28a7.63 7.63 0 0 1-5-2c-1.4 2.1-.35 4.35.6 5.55.14.17.41.07.47-.15.44-1.8 2.93-1.22 2.93.6 0 2.28.87 3.4 1.72 3.81.34.16.59-.2.49-.56-.31-1.05-.29-2.46 1.29-3.25 3-1.5 3.17-4.83 2.5-6-.67.67-2.6 2-5 2Z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.8 101.12">
   <defs>
-    <linearGradient id="gradient" x1="16" x2="16" y1="32" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#000"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
-    </linearGradient>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: MaximumVoltage, 'Maximum Voltage';
+        font-size: 90.05px;
+      }
+    </style>
   </defs>
-	<style>
-    @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
-  </style>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <path class="cls-1" d="M32.89,20.58l-5.88-5.88h-9.93v-3.32H6.83v10.25h10.25v-3.93h8.62l6.32,6,19.95-.04v-3.08h-19.08ZM14.51,18.95h-4.99v-4.99h4.99v4.99Z"/>
+    <path class="cls-1" d="M14.94,27.84v10.12h10.12v-10.12h-10.12ZM22.55,35.13h-5.08v-4.45h5.08v4.45Z"/>
+    <path class="cls-1" d="M22.99,41.66l-2.99,4.92-8.95.08v-4.03H0v11.06h11.06v-3.07h10.9l4.12-5.92h53.9v-3.04H22.99ZM8.11,50.8H2.75v-5.36h5.36v5.36Z"/>
+    <path class="cls-1" d="M36.83,53.01l-7.35,8.67h-3.92v-4.01h-11.06v11.06h11.06v-4.1h4.71l7.62-8.88h32.72v-2.74h-33.78ZM22.51,65.68h-5.01v-5.01h5.01v5.01Z"/>
+    <rect class="cls-1" x="25.07" y="30.99" width="44.78" height="3.82"/>
+    <text class="cls-2" transform="translate(89.64 83.54)"><tspan x="0" y="0">A</tspan></text>
+    <path class="cls-1" d="M99.32,33.73c-1.65-12.86-10.3-24.46-23.25-27.91-11.1-2.96-25.29-2.03-38.71-2.03v16.93l8.73-.15c0-8.54.01-9,.01-9,0,0,14.43-.1,18.43.07,15.29.66,26.2,11.16,26.74,25.63.61,15.97-9.01,27.57-24.54,29.22-4.62.49-21.21.25-21.21.25l-.03-11h-7.88v18.5c10.9,0,21.3.91,31.47-.2,6.83-.75,12.72-3.18,17.46-6.94l12.78-33.37Z"/>
+  </g>
 </svg>
