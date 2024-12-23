@@ -8,14 +8,14 @@ type Event = {
 };
 
 const events: Event[] = [
-  { date: '20-01-2025', description: 'Abertura do Evento / Palestra sobre Acessibilidade na Web' },
+  { date: '20-01-2025', description: 'Abertura do Evento / Palestra - Carreira acadêmica em T.I.' },
   {
     date: '21-01-2025',
-    description: ['Palestra - Trabalho remoto e estrangeiro', 'Palestra - Carreira acadêmica em T.I.'],
+    description: ['Palestra - Trabalho remoto e estrangeiro', 'Palestra sobre Acessibilidade na Web.'],
   },
   { date: '22-01-2025', description: 'Roda de conversa - Mulheres dentro de T.I.' },
   { date: '23-01-2025', description: 'Oficinas'},
-  { date: '24-01-2025', description: 'SpeedCode / Encerramento do evento' },
+  { date: '24-01-2025', description: 'SpeedCode / Encerramento do evento.' },
 ];
 
 const Schedule: React.FC = () => {
