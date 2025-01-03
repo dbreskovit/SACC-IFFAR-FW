@@ -15,7 +15,7 @@ const events: Event[] = [
   },
   { date: '22-01-2025', description: 'Roda de conversa - Mulheres dentro de T.I.' },
   { date: '23-01-2025', description: 'Oficinas'},
-  { date: '24-01-2025', description: 'SpeedCode / Encerramento do evento.' },
+  { date: '24-01-2025', description: 'Confraternização com jogos / Encerramento do evento.'},
 ];
 
 const Schedule: React.FC = () => {
