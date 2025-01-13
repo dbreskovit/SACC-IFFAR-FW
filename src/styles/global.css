@@ -53,3 +53,22 @@
 
   background-attachment: fixed;
 }
+
+
+
+
+@keyframes pulse-scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.animate-pulse-scale {
+  animation: pulse-scale 2s infinite;
+}
+.hover\:animate-none:hover {
+  animation: none;
+}

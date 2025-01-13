@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header';
 import Schedule from '../components/Schedule';
-import Popup from '../components/Popup.astro'; // Importa o Popup
+import SpeakerSection from '../components/SpeakerSection';
 
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 ---
@@ -13,23 +13,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <title>{SITE_TITLE}</title>
-    <style>
-      @keyframes pulse-scale {
-        0%,
-        100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.1);
-        }
-      }
-      .animate-pulse-scale {
-        animation: pulse-scale 2s infinite;
-      }
-      .hover\:animate-none:hover {
-        animation: none;
-      }
-    </style>
   </head>
 
   <body class="text-white">
@@ -54,13 +37,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 
         <div class="flex justify-center mb-8">
           <a
-            href="/sobre"
+            href="https://www.sympla.com.br/evento/i-semana-academica-da-ciencia-da-computacao/2778512"
             class="bg-white text-black py-2 px-4 rounded-full animate-pulse-scale hover:animate-none hover:bg-zinc-900 hover:text-white transition-all duration-200 text-lg"
           >
-            Saiba Mais
+            Inscreva-se
           </a>
         </div>
       </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section class="bg-background" id="palestrantes">
+      
+        <SpeakerSection />
+    
     </section>
 
     <!-- Cronograma Section -->
@@ -71,15 +61,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
         <Schedule />
       </main>
     </section>
-
-<!-- Popup Section -->
-<Popup
-  eventName="Semana Acadêmica de Ciência da Computação"
-  eventDescription="Inscreva-se agora para mergulhar em um mundo de tecnologia, palestras incríveis e muito networking, aproveite que as vagas são limitadas!"
-  symplaUrl="https://www.sympla.com.br/evento/i-semana-academica-da-ciencia-da-computacao/2778512"
-/>
-
-  
 
     <Footer />
   </body>

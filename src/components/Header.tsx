@@ -9,9 +9,8 @@ function Header() {
     <div className="fixed top-0 z-40 w-full glass transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06]">
       <header className="max-w-8xl mx-auto">
         <div
-          className={`flex items-center justify-between ${
-            isMenuOpen ? 'flex-col' : 'flex-row'
-          } py-2 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0`}
+          className={`flex items-center justify-between ${isMenuOpen ? 'flex-col' : 'flex-row'
+            } py-2 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0`}
         >
           <div className="flex w-full items-center justify-between">
             <a href="/" className="flex items-center space-x-2">
@@ -32,8 +31,8 @@ function Header() {
                 ${isMenuOpen ? 'flex' : 'hidden lg:flex'} 
                 space-y-4 lg:space-y-0 lg:space-x-4 w-full lg:w-1/2 font-semibold text-base md:text-md text-slate-100 justify-end mt-4 lg:mt-0`} // Adicionei mt-4 para aumentar a distância no mobile
           >
+            <HeaderLink href="https://www.sympla.com.br/evento/i-semana-academica-da-ciencia-da-computacao/2778512">Inscreva-se</HeaderLink>
             <HeaderLink href="/sobre">Sobre o Evento</HeaderLink>
-            {/* <HeaderLink href="/sobre">Programação</HeaderLink> */}
             <HeaderLink href="/patrocinio">Patrocine-nos 💜</HeaderLink>
           </nav>
         </div>
