@@ -24,9 +24,9 @@ const speakers: Speaker[] = [
 const SpeakerSection: React.FC = () => {
   return (
     <section className="bg-background text-white py-12">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">Palestrantes</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="max-w-6xl mx-auto px-4 text-center">
+        <h2 className="text-4xl font-bold mb-8">Palestrantes</h2>
+        <div className="flex flex-wrap justify-center gap-6">
           {speakers.map((speaker, index) => (
             <div
               key={index}
