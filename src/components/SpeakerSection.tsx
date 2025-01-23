@@ -19,10 +19,6 @@ const speakers: Speaker[] = [
     name: 'Patricia Ribeiro',
     photo: 'https://media.licdn.com/dms/image/v2/D4D03AQG-PoX7NSnLUQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730129426159?e=1742428800&v=beta&t=W0QZWEpzkpmh4CzR5ShCsvafXQa-V_-PqKrb7ikG0w0'
   },
-  {
-    name: 'Mateus Henrique Dal Forno',
-    photo: 'https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4496073P4'
-  }
 ];
 
 const SpeakerSection: React.FC = () => {
