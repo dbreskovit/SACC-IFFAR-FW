@@ -8,7 +8,7 @@ type Speaker = {
 
 const speakers: Speaker[] = [
   {
-    name: 'Uianes Luiz Rockenbach Biondo',
+    name: 'Uianes Luiz Biondo',
     photo: 'https://avatars.githubusercontent.com/u/53319823?v=4'
   },
   {
